@@ -17,7 +17,7 @@
   <body>
     <main class="newspaper">
       <h1 class="name">The Giggle Gazette</h1>
-      <p class="date">January 7, 2026</p>
+      <p class="date"></p>
       <h2 class="headline">Breaking: Cat Discovers Renewable Energy Source</h2>
       <h3 class="sub-headline">Neighborhood Feline Accidentally Solves Global Power Crisis</h3>
       <p class="author">By Alex Beam</p>
@@ -33,5 +33,18 @@
         course.</p
       >
     </main>
+    <script>
+      const date = new Date() // or new Date(2026, 0, 7);
+
+      const formatted = date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })
+
+      document.querySelector('.date').textContent = formatted
+
+      console.log(formatted) // "January 7, 2026"
+    </script>
   </body>
 </html>
