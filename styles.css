@@ -1,9 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-size: 24px;
+}
+
+body {
+  background: linear-gradient(hsl(47, 50%, 55%), hsl(47, 20%, 30%) )  ;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.newspaper {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 60vw;
+  box-shadow: 0 0 15px 5px hsl(0, 0%, 20%, 0.5);
+  padding: 1.5rem;
+  background-color: hsl(47, 50%, 90%);
+}
+
+.date {
+  text-align: center;
+}
+
+.name {
+  font-size: 2rem;
+  font-family: 'Times New Roman', serif;
+  text-align: center;
+}
+
+.name,
+.author {
+  text-transform: uppercase;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+}
+
+
+.author, .text {
+    margin-top: 1rem;
+}
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+  
+}
+.text::first-letter {
+  font-size: 2em;
+  font-weight: bold;
 }
